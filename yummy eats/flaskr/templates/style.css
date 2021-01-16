@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+body {
+    margin:0;
+    text-align: center;
+    font-family: 'montserrat' , sans-serif;
+}
+
+.hero-bg {
+
+    background: #36b7df url(img/bg.jpg);
+    color: white;
+    background-size: cover;
+    font-weight: bold;
+    padding: 2em ;
+}
+.top{
+    animation: fade 2s;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity:1 ;
+        transform: translateY(0);
+    }
+}
+    
+
+.hero-bg a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 100em;
+    
+}
+
+h1 {
+    margin: 10px , 15px;
+    font: bold 50px ;
+    
+}
+
+h1 span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    z-index: 1;
+    font: bold medium;
+}
+
+
+.form-container {
+    background-color:white;
+    margin: 0 -2em;
+    padding: 2em;
+    border-radius: 10px;
+    
+    
+}
+
+.form-container form label {
+    color:  #1a7591;
+    font-weight: bold;
+    display: block;
+}
+
+.form-container form p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+    
+}
+
+.form-container form input[ type=button] {
+    background-color: #f89104;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    border: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.form-container form input[ type=button]:hover {
+    background-color: rgb(177, 110, 10) ;
+}
+
+.form-container form input[ type=text] {
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+ img {
+    width: 100%;
+    
+}
+
+.authentic {
+    font: black bolder;
+}
+
+.authentic .authentic-right p{
+    color: black;
+    line-height: 2em;
+    font: 15px ;
+}
+.authentic .authentic-right h2{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+}
+.authentic .authentic-right h2 span
+{
+    text-decoration: underline solid blue;
+}
+
+
+
+@media(min-width:700px){
+    
+    .hero-bg{
+        text-align: left;
+        padding: 1em 0 4em 4em;
+    }
+    .hero-bg p {
+        margin: 0 0 1em;
+    }
+
+    .hero-bg .top {
+        width: 65%;
+    }
+    form{
+        display: flex; 
+    }
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);  
+    }
+    input[type=button]{
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 0.5em;
+        margin-top: 1.5em;
+        padding: .7em 0;
+        width: 70%;
+    }
+    
+    .left{
+        width: 70%;
+    }
+    img {
+        width: 50%;
+    }
+    
+    .authentic {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .authentic-right{
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+        
+    }
+    
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+}
+.animate-overlay {
+    animation: overlay 3s forwards;
+}
+@keyframes overlay {
+    0% {
+        opacity:0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
